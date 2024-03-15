@@ -1,0 +1,29 @@
+{
+  "name": "email-master",
+  "version": "1.0.1",
+  "description": "EmailMaster is a comprehensive npm package that simplifies email delivery integration into your Node.js applications. With EmailMaster, you can effortlessly send transactional and marketing emails using popular email delivery services APIs such as nodemailer",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mohammadhusain",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammad-bytes/emailMaster.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohammad-bytes/emailMaster/issues"
+  },
+  "homepage": "https://github.com/mohammad-bytes/emailMaster#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.13",
+    "@types/nodemailer": "^6.4.14",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.12"
+  }
+}
