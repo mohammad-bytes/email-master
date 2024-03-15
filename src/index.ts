@@ -22,8 +22,8 @@ export async function sendEmail(body: ICreateTransport) {
         const mailOptions = {
             from: body.from,
             to: body.to,
-            subject: body.subject,
-            html: body.html,
+            subject: body.subject || 'Testing email',
+            html: body.html || 'Testing email',
         };
         return await transporter.sendMail(mailOptions);
     } catch (error) {

@@ -17,8 +17,7 @@ npm install @types/email-master
 
 ```
 const options = {
-    host: "smtp.example.com",
-    port: 587,
+    service:'gmail',
     auth: {
         user: "Test@gmail.com",
         password: "Test@123"
