@@ -1,33 +1,19 @@
 {
-  "name": "email-master",
+  "name": "my-nodejs-ts-package",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "description": "A sample TypeScript Node.js package",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "nodemailer",
-    "sendEmail",
-    "typescript-email-send",
-    "nodemailer-wrapper",
-    "nodejs-email",
-    "email-master"
-  ],
-  "author": "Mohammadhusain",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mohammad-bytes/emailMaster.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mohammad-bytes/emailMaster/issues"
-  },
-  "homepage": "https://github.com/mohammad-bytes/emailMaster#readme",
+  "author": "Your Name",
+  "license": "MIT",
   "devDependencies": {
+    "@types/node": "^16.11.13",
     "@types/nodemailer": "^6.4.14",
-    "typescript": "^5.4.2"
+    "typescript": "^4.5.5"
   },
   "dependencies": {
     "nodemailer": "^6.9.12"
