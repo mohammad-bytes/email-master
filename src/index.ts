@@ -1,8 +1,7 @@
 import * as nodemailer from 'nodemailer';
 
 interface ICreateTransport {
-    host: string,
-    port: number,
+    service: string,
     auth: {
         user: string,
         password: string
@@ -16,8 +15,7 @@ interface ICreateTransport {
 export async function sendEmail(body: ICreateTransport) {
     try {
         const transporter = nodemailer.createTransport({
-            host: body.host,
-            port: body.port,
+            service: body.service,
             auth: body.auth
         });
 
